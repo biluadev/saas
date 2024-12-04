@@ -1,0 +1,9 @@
+#Create
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+    "name": "Estevão Bilua",
+    "email": "biluadev@gmail.com",
+    "password": "123456"
+}
