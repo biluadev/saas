@@ -7,3 +7,18 @@ Content-Type: application/json
     "email": "biluadev@gmail.com",
     "password": "123456"
 }
+
+###
+
+POST http://localhost:3333/sessions/password
+Content-Type: application/json
+
+{
+    "email": "biluadev@gmail.com",
+    "password": "123456"
+}
+###
+# Obter o perfil do usuário autenticado
+GET http://localhost:3333/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZTIyZjg1My01MTc2LTQwYjUtYTJjNC0xNWJhOTVhYWQ2YWIiLCJpYXQiOjE3MzM2NzM1MDYsImV4cCI6MTczNDI3ODMwNn0.PTBa7t6eBTAcPIJzGdkeTEm-QI-13P0hZ9mf2T0ebIg
+Content-Type: application/json
