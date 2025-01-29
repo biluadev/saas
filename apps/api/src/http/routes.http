@@ -20,5 +20,5 @@ Content-Type: application/json
 ###
 # Obter o perfil do usuário autenticado
 GET http://localhost:3333/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZTIyZjg1My01MTc2LTQwYjUtYTJjNC0xNWJhOTVhYWQ2YWIiLCJpYXQiOjE3MzM2NzM1MDYsImV4cCI6MTczNDI3ODMwNn0.PTBa7t6eBTAcPIJzGdkeTEm-QI-13P0hZ9mf2T0ebIg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzMTI2OWMyYS04Mzg3LTRiMGQtOWU1Yi05YTVmYWZiYzhmYmIiLCJpYXQiOjE3MzgxNzM4NzcsImV4cCI6MTczODc3ODY3N30.yfrwUyPKoliqh7lQ80oxOYEg8xRznVAUlJqN-SvOc64
 Content-Type: application/json
