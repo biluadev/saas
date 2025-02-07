@@ -3,9 +3,9 @@ POST http://localhost:3333/users
 Content-Type: application/json
 
 {
-    "name": "Estevão Bilua",
-    "email": "biluadev@gmail.com",
-    "password": "123456"
+    "name": "Desenvolvimento",
+    "email": "dev@gmail.com",
+    "password": "12345678"
 }
 
 ###
@@ -14,11 +14,31 @@ POST http://localhost:3333/sessions/password
 Content-Type: application/json
 
 {
-    "email": "biluadev@gmail.com",
+    "email": "dev@gmail.com",
     "password": "12345678"
 }
 ###
 # Obter o perfil do usuário autenticado
 GET http://localhost:3333/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzMTI2OWMyYS04Mzg3LTRiMGQtOWU1Yi05YTVmYWZiYzhmYmIiLCJpYXQiOjE3MzgxNzM4NzcsImV4cCI6MTczODc3ODY3N30.yfrwUyPKoliqh7lQ80oxOYEg8xRznVAUlJqN-SvOc64
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxM2JmNjE5NC02YjQ3LTQ5Y2EtYTMyYi1jYjQ1ZGJkYTFhYjciLCJpYXQiOjE3Mzg5MzgyNTcsImV4cCI6MTczOTU0MzA1N30.zqZTqghLZRd6hlnxRWOE9Fl3cLVbVSdbcbMnvVRxTrg
 Content-Type: application/json
+
+###
+# Create an Organization
+POST http://localhost:3333/organization
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxM2JmNjE5NC02YjQ3LTQ5Y2EtYTMyYi1jYjQ1ZGJkYTFhYjciLCJpYXQiOjE3Mzg5MzgyNTcsImV4cCI6MTczOTU0MzA1N30.zqZTqghLZRd6hlnxRWOE9Fl3cLVbVSdbcbMnvVRxTrg
+Content-Type: application/json
+
+{
+  "name": "alugaAqui",
+  "domain": "alugaqui.org",
+  "shouldAttachUsersByDomain": true
+}
+
+###
+# Get Membership
+GET http://localhost:3333/organizations/alugaAqui/membership
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxM2JmNjE5NC02YjQ3LTQ5Y2EtYTMyYi1jYjQ1ZGJkYTFhYjciLCJpYXQiOjE3Mzg5MzgyNTcsImV4cCI6MTczOTU0MzA1N30.zqZTqghLZRd6hlnxRWOE9Fl3cLVbVSdbcbMnvVRxTrg
+Content-Type: application/json
+
+{}
